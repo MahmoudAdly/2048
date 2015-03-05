@@ -1,3 +1,5 @@
+var svg = null;
+
 function resizeTouchpad() {
   $(".touchpad").css('position', 'absolute');
   $(".touchpad").offset($(".stage").offset());
@@ -5,9 +7,9 @@ function resizeTouchpad() {
   $(".touchpad").css('height', $('.stage').height());
 }
 
-$( window ).load(function() {
+$(window).load(function() {
   resizeTouchpad();
-  //Enable swiping...
+  
   $(".touchpad").swipe( {
     tap:function(event, target) {
       console.log(event);
@@ -19,6 +21,20 @@ $( window ).load(function() {
   });
 });
 
-$(window).on('resize', function() {
+$(window).bind('resize', function() {
   resizeTouchpad();
 });
+
+(function () {
+  var embeds, embed, i, onSvgLoaded;
+
+  onSvgLoaded = function () {
+    svg  = $( this.getSVGDocument().documentElement );
+  };
+
+  embeds = document.querySelectorAll('embed');
+
+  for (i=0; embed=embeds[i]; i++) {
+    embed.addEventListener('load', onSvgLoaded);
+  }
+})();
