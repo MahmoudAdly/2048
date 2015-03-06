@@ -81,7 +81,7 @@
        height="500"
        x="0"
        y="552.36218"
-       ry="11.313708"
+       ry="5"
        inkscape:label="#rect3049" />
     <rect
        style="fill:#d7c9c0;"
@@ -96,10 +96,10 @@
        inkscape:tile-h="110"
        inkscape:tile-x0="8.4852819"
        inkscape:tile-y0="118.06183"
-       ry="11"
+       ry="5"
        inkscape:label="#rect3819" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="686.86218"
@@ -110,7 +110,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4009" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="807.86218"
@@ -121,7 +121,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4011" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="928.86218"
@@ -132,7 +132,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4013" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="565.86218"
@@ -143,7 +143,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4015" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="686.86218"
@@ -154,7 +154,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4017" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="807.86218"
@@ -165,7 +165,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4019" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="928.86218"
@@ -176,7 +176,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4021" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="565.86218"
@@ -187,7 +187,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4023" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="686.86218"
@@ -198,7 +198,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4025" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="807.86218"
@@ -209,7 +209,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4027" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="928.86218"
@@ -220,7 +220,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4029" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="565.86218"
@@ -231,7 +231,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4031" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="686.86218"
@@ -242,7 +242,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4033" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="807.86218"
@@ -253,7 +253,7 @@
        style="fill:#d7c9c0;"
        inkscape:label="#use4035" />
     <rect
-       ry="11"
+       ry="5"
        inkscape:tile-y0="118.06183"
        inkscape:tile-x0="8.4852819"
        y="928.86218"
@@ -462,7 +462,7 @@
        height="80"
        x="193.52481"
        y="462.36218"
-       ry="9.8245668" />
+       ry="5" />
     <text
        xml:space="preserve"
        style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#f9f6f2;fill-opacity:1;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
@@ -486,7 +486,7 @@
          x="268.4848"
          y="490.02295">Score</tspan></text>
     <rect
-       ry="9.8245668"
+       ry="5"
        y="462.36218"
        x="350"
        height="80"
