@@ -47,7 +47,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="2.9794369"
+     inkscape:cx="-166.01908"
      inkscape:cy="313.72583"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -85,7 +85,7 @@
        inkscape:label="#rect3049" />
     <rect
        style="fill:#d7c9c0;"
-       id="rect3819"
+       id="tile00"
        width="110"
        height="110"
        x="13.5"
@@ -96,7 +96,8 @@
        inkscape:tile-h="110"
        inkscape:tile-x0="8.4852819"
        inkscape:tile-y0="118.06183"
-       ry="11" />
+       ry="11"
+       inkscape:label="#rect3819" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -105,8 +106,9 @@
        x="13.5"
        height="110"
        width="110"
-       id="use4009"
-       style="fill:#d7c9c0;" />
+       id="tile10"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4009" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -115,8 +117,9 @@
        x="13.5"
        height="110"
        width="110"
-       id="use4011"
-       style="fill:#d7c9c0;" />
+       id="tile20"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4011" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -125,8 +128,9 @@
        x="13.5"
        height="110"
        width="110"
-       id="use4013"
-       style="fill:#d7c9c0;" />
+       id="tile30"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4013" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -135,8 +139,9 @@
        x="134.5"
        height="110"
        width="110"
-       id="use4015"
-       style="fill:#d7c9c0;" />
+       id="tile01"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4015" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -145,8 +150,9 @@
        x="134.5"
        height="110"
        width="110"
-       id="use4017"
-       style="fill:#d7c9c0;" />
+       id="tile11"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4017" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -155,8 +161,9 @@
        x="134.5"
        height="110"
        width="110"
-       id="use4019"
-       style="fill:#d7c9c0;" />
+       id="tile21"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4019" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -165,8 +172,9 @@
        x="134.5"
        height="110"
        width="110"
-       id="use4021"
-       style="fill:#d7c9c0;" />
+       id="tile31"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4021" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -175,8 +183,9 @@
        x="255.5"
        height="110"
        width="110"
-       id="use4023"
-       style="fill:#d7c9c0;" />
+       id="tile02"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4023" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -185,8 +194,9 @@
        x="255.5"
        height="110"
        width="110"
-       id="use4025"
-       style="fill:#d7c9c0;" />
+       id="tile12"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4025" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -195,8 +205,9 @@
        x="255.5"
        height="110"
        width="110"
-       id="use4027"
-       style="fill:#d7c9c0;" />
+       id="tile22"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4027" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -205,8 +216,9 @@
        x="255.5"
        height="110"
        width="110"
-       id="use4029"
-       style="fill:#d7c9c0;" />
+       id="tile32"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4029" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -215,8 +227,9 @@
        x="376.5"
        height="110"
        width="110"
-       id="use4031"
-       style="fill:#d7c9c0;" />
+       id="tile03"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4031" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -225,8 +238,9 @@
        x="376.5"
        height="110"
        width="110"
-       id="use4033"
-       style="fill:#d7c9c0;" />
+       id="tile13"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4033" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -235,8 +249,9 @@
        x="376.5"
        height="110"
        width="110"
-       id="use4035"
-       style="fill:#d7c9c0;" />
+       id="tile23"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4035" />
     <rect
        ry="11"
        inkscape:tile-y0="118.06183"
@@ -245,181 +260,198 @@
        x="376.5"
        height="110"
        width="110"
-       id="use4037"
-       style="fill:#d7c9c0;" />
+       id="tile33"
+       style="fill:#d7c9c0;"
+       inkscape:label="#use4037" />
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       x="68.508545"
-       y="633.69666"
-       id="text4064"
-       sodipodi:linespacing="125%"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       x="68.687988"
+       y="640.29211"
+       id="text00"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text4064"><tspan
          sodipodi:role="line"
          id="tspan3010"
-         x="68.508545"
-         y="633.69666">0</tspan></text>
+         x="68.687988"
+         y="640.29211">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3012"
-       y="633.7052"
-       x="189.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       id="text01"
+       y="640.29211"
+       x="189.70508"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3012"><tspan
          id="tspan3014"
          sodipodi:role="line"
-         x="189.50854"
-         y="633.7052">0</tspan></text>
+         x="189.70508"
+         y="640.29211">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       x="310.50854"
-       y="633.69666"
-       id="text3016"
-       sodipodi:linespacing="125%"><tspan
-         y="633.69666"
-         x="310.50854"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       x="310.70508"
+       y="640.29211"
+       id="text02"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3016"><tspan
+         y="640.29211"
+         x="310.70508"
          sodipodi:role="line"
          id="tspan3018">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3020"
-       y="633.69666"
+       id="text03"
+       y="640.29211"
        x="431.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3020"><tspan
          id="tspan3022"
          sodipodi:role="line"
          x="431.50854"
-         y="633.69666">0</tspan></text>
+         y="640.29211">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3024"
-       y="754.69666"
-       x="68.508545"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       id="text10"
+       y="761.29211"
+       x="68.705078"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3024"><tspan
          id="tspan3026"
          sodipodi:role="line"
-         x="68.508545"
-         y="754.69666">0</tspan></text>
+         x="68.705078"
+         y="761.29211">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
        x="189.50854"
-       y="754.69666"
-       id="text3028"
-       sodipodi:linespacing="125%"><tspan
-         y="754.69666"
+       y="761.29211"
+       id="text11"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3028"><tspan
+         y="761.29211"
          x="189.50854"
          sodipodi:role="line"
          id="tspan3030">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3032"
-       y="754.69666"
+       id="text12"
+       y="761.29211"
        x="310.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3032"><tspan
          id="tspan3034"
          sodipodi:role="line"
          x="310.50854"
-         y="754.69666">0</tspan></text>
+         y="761.29211">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
        x="431.50854"
-       y="754.69666"
-       id="text3036"
-       sodipodi:linespacing="125%"><tspan
-         y="754.69666"
+       y="761.29211"
+       id="text13"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3036"><tspan
+         y="761.29211"
          x="431.50854"
          sodipodi:role="line"
          id="tspan3038">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       x="68.508545"
-       y="875.69666"
-       id="text3040"
-       sodipodi:linespacing="125%"><tspan
-         y="875.69666"
-         x="68.508545"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       x="68.687988"
+       y="882.29211"
+       id="text20"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3040"><tspan
+         y="882.29211"
+         x="68.687988"
          sodipodi:role="line"
          id="tspan3042">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3044"
-       y="875.69666"
+       id="text21"
+       y="882.29211"
        x="189.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3044"><tspan
          id="tspan3046"
          sodipodi:role="line"
          x="189.50854"
-         y="875.69666">0</tspan></text>
+         y="882.29211">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
        x="310.50854"
-       y="875.69666"
-       id="text3048"
-       sodipodi:linespacing="125%"><tspan
-         y="875.69666"
+       y="882.29211"
+       id="text22"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3048"><tspan
+         y="882.29211"
          x="310.50854"
          sodipodi:role="line"
          id="tspan3050">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3052"
-       y="875.69666"
+       id="text23"
+       y="882.29211"
        x="431.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3052"><tspan
          id="tspan3054"
          sodipodi:role="line"
          x="431.50854"
-         y="875.69666">0</tspan></text>
+         y="882.29211">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3056"
-       y="996.69666"
-       x="68.508545"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       id="text30"
+       y="1003.2921"
+       x="68.705078"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3056"><tspan
          id="tspan3058"
          sodipodi:role="line"
-         x="68.508545"
-         y="996.69666">0</tspan></text>
+         x="68.705078"
+         y="1003.2921">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
        x="189.50854"
-       y="996.69666"
-       id="text3060"
-       sodipodi:linespacing="125%"><tspan
-         y="996.69666"
+       y="1003.2921"
+       id="text31"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3060"><tspan
+         y="1003.2921"
          x="189.50854"
          sodipodi:role="line"
          id="tspan3062">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
-       id="text3064"
-       y="996.69666"
+       id="text32"
+       y="1003.2921"
        x="310.50854"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
-       xml:space="preserve"><tspan
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:label="#text3064"><tspan
          id="tspan3066"
          sodipodi:role="line"
          x="310.50854"
-         y="996.69666">0</tspan></text>
+         y="1003.2921">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
+       style="font-size:55px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:Sans;-inkscape-font-specification:Sans"
        x="431.50854"
-       y="996.69666"
-       id="text3068"
-       sodipodi:linespacing="125%"><tspan
-         y="996.69666"
+       y="1003.2921"
+       id="text33"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3068"><tspan
+         y="1003.2921"
          x="431.50854"
          sodipodi:role="line"
          id="tspan3070">0</tspan></text>
@@ -436,7 +468,7 @@
        style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#f9f6f2;fill-opacity:1;font-family:TakaoPGothic;-inkscape-font-specification:TakaoPGothic"
        x="268.64444"
        y="530.81073"
-       id="text3072"
+       id="textScore"
        sodipodi:linespacing="125%"><tspan
          y="530.81073"
          x="268.64444"
