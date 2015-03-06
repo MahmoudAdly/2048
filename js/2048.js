@@ -2,11 +2,14 @@ var board = {
   svg: null,
   currentScore: 0,
   bestScore: 0,
+  tileInitialValue: 2,
+  tileEmptyValue: 0,
   array: [[0,0,0,0],
           [0,0,0,0],
           [0,0,0,0],
           [0,0,0,0]
           ],
+  stackingLoopLimit: 3,
   // get tile and text styles for the matching value
   selectStyle: function(value) {
     switch(value) {
@@ -64,7 +67,7 @@ var board = {
       }  
     }
   },
-  // zero all board numbers
+  // reset board and scores
   reset: function() {
     // clear array
     for(var i=0; i<4; i++) {
@@ -74,18 +77,134 @@ var board = {
     }
     // clear score
     this.currentScore = 0;
-  },
-  shift: function() {
 
+    // create new tiles
+    this.addNewTile();
+    this.addNewTile();
+
+    this.updateView();
   },
-  merge: function() {
-    // body...
+  // add a new tile in a random empty tile
+  addNewTile: function() {
+    // find empty places
+    var emptyTiles = [];
+    for(var i=0; i<4; i++) {
+      for(var j=0; j<4; j++) {
+        if (this.array[i][j] == 0) {
+          emptyTiles.push({'i':i, 'j':j});
+        }
+      }
+    }
+    if (emptyTiles.length == 0)
+      return false;
+    // select one in random
+    var rand_num =  Math.floor(Math.random() * (emptyTiles.length-1));
+    var rand_tile = emptyTiles[rand_num];
+    this.array[rand_tile['i']][rand_tile['j']] = this.tileInitialValue;
+    return true;
   },
-  hswipe: function() {
-    // body...
+  // the non-empty tile takes the place of the empty one
+  challenge: function(a,b) {
+    var aVal = this.array[a['i']][a['j']];
+    var bVal = this.array[b['i']][b['j']];
+    if (aVal == this.tileEmptyValue && bVal != this.tileEmptyValue) {
+      this.array[a['i']][a['j']] = bVal;
+      this.array[b['i']][b['j']] = this.tileEmptyValue;
+      return true;
+    } else {
+      return false;
+    }
   },
-  vswipe: function() {
-    // body...
+  // two similar tiles merge with value sum
+  merge: function(a,b) {
+    var aVal = this.array[a['i']][a['j']];
+    var bVal = this.array[b['i']][b['j']];
+    if(aVal != this.tileEmptyValue && aVal == bVal) {
+      var newVal = aVal + bVal
+      this.array[a['i']][a['j']] = newVal;
+      this.array[b['i']][b['j']] = this.tileEmptyValue;
+
+      this.currentScore += newVal;
+      if (this.currentScore > this.bestScore) {
+        this.bestScore = this.currentScore;
+      }
+
+      return true;
+    } else {
+      return false;
+    }
+  },
+  // move tiles to the right/left and do the moving and merging.
+  // default is right
+  swipeH: function(reverse) {
+    reverse = (typeof(reverse)==='boolean') ? reverse : false ;
+    var jArr = (reverse == false) ? [3,2,1] : [0,1,2] ;
+    var incrementer = (reverse == false) ? -1 : 1 ;
+    
+    // create a new tile only if a movement has happened
+    var changeHappened = false;
+
+    // this process takes three loops: stack, merge, stack again
+    for(var i=0; i < this.array.length; i++) {
+      for(var loop=0; loop<this.stackingLoopLimit; loop++) {
+        for(var x in jArr) {
+          var j = jArr[x];
+          var change = this.challenge({'i':i, 'j':j}, {'i': i, 'j': j+incrementer});
+          changeHappened = changeHappened || change;
+        }
+      }
+      for(var x in jArr) {
+        var j = jArr[x];
+        var change = this.merge({'i':i, 'j':j}, {'i': i, 'j': j+incrementer});
+        changeHappened = changeHappened || change;
+      }
+      for(var loop=0; loop<this.stackingLoopLimit; loop++) {
+        for(var x in jArr) {
+          var j = jArr[x];
+          var change = this.challenge({'i':i, 'j':j}, {'i': i, 'j': j+incrementer});
+          changeHappened = changeHappened || change;
+        }
+      }
+    }
+    // add new tile and update view
+    if(changeHappened ==true) {
+      this.addNewTile();
+    }
+    this.updateView();
+  },
+  // move tiles to the down/up and do the moving and merging.
+  // default is down
+  swipeV: function(reverse) {
+    reverse = (typeof(reverse)==='boolean') ? reverse : false;
+    var iArr = (reverse == false) ? [3,2,1] : [0,1,2] ;
+    var incrementer = (reverse == false) ? -1 : 1 ;
+
+    // create a new tile only if a movement has happened
+    var changeHappened = false;
+
+    // this process takes three loops: stack, merge, stack again
+    for(var loop=0; loop<this.stackingLoopLimit; loop++) {
+      for(var x in iArr) {
+        var i = iArr[x];      
+        for(var j=0; j < this.array.length; j++) {
+          var change = this.challenge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
+          changeHappened = changeHappened || change;
+        }
+        for(var j=0; j < this.array.length; j++) {
+          var change = this.merge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
+          changeHappened = changeHappened || change;
+        }
+        for(var j=0; j < this.array.length; j++) {
+          var change = this.challenge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
+          changeHappened = changeHappened || change;
+        }
+      }
+    }
+    // add new tile and update view
+    if(changeHappened == true) {
+      this.addNewTile();
+    }
+    this.updateView();
   },
   // update the svg tiles and score
   updateView: function() {
@@ -116,30 +235,36 @@ function resizeTouchpad() {
   $(".touchpad").css('height', $('.stage').height());
 }
 
+$(window).bind('resize', function() {
+  resizeTouchpad();
+});
+
 $(window).load(function() {
   resizeTouchpad();
-  
+
+  // initialize swipe listener
   $(".touchpad").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log(direction);
       switch(direction) {
         case "left":
+          board.swipeH(true);
           break;
         case "up":
+          board.swipeV(true);
           break;
         case "right":
+          board.swipeH();
           break;
         case "down":
+          board.swipeV();
           break;
         default:
       }
     },
     threshold:50
   });
-});
 
-$(window).bind('resize', function() {
-  resizeTouchpad();
+  board.reset();
 });
 
 $(window).keydown(function(e){
@@ -147,18 +272,22 @@ $(window).keydown(function(e){
     case 37:
       // left
       e.preventDefault();
+      board.swipeH(true);
       break;
     case 38:
       // up
       e.preventDefault();
+      board.swipeV(true);
       break;
     case 39:
       // right
       e.preventDefault();
+      board.swipeH();
       break;
     case 40:
       // down
       e.preventDefault();
+      board.swipeV();
       break;
     default:
   }
