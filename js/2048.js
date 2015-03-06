@@ -235,6 +235,14 @@ function resizeTouchpad() {
   $(".touchpad").css('height', $('.stage').height());
 }
 
+// load svg object to have access to it
+(function () {
+  var onSvgLoaded = function () {
+    board.svg = $( this.getSVGDocument().documentElement );
+  };
+  document.querySelectorAll('embed')[0].addEventListener('load', onSvgLoaded);
+})();
+
 $(window).bind('resize', function() {
   resizeTouchpad();
 });
@@ -264,7 +272,12 @@ $(window).load(function() {
     threshold:50
   });
 
+  $(".new-game").click(function() {
+    board.reset();
+  });
+
   board.reset();
+
 });
 
 $(window).keydown(function(e){
@@ -293,10 +306,3 @@ $(window).keydown(function(e){
   }
 });
 
-// load svg object to have access to it
-(function () {
-  var onSvgLoaded = function () {
-    board.svg = $( this.getSVGDocument().documentElement );
-  };
-  document.querySelectorAll('embed')[0].addEventListener('load', onSvgLoaded);
-})();
