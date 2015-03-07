@@ -16,21 +16,46 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.new-game {
-  background-color:#8f7a66;
-  border:1px solid #8f7a66;
+.btn {
   border-radius:5px;
-  color:#f9f6f2;
   display:block;
   font-family:sans-serif;
   font-size:18px;
   line-height:44px;
   text-align:center;
   text-decoration:none;
-  display: block;
-  width:50%;
-  max-width: 200px;
+  display: inline-block;
   margin: 0 auto;
+}
+.new-game {
+  background-color:#8f7a66;
+  border:1px solid #8f7a66;
+  color:#f9f6f2;
+  width:40%;
+  max-width: 200px;
+}
+.fb-login {
+  background-color:#133783;
+  border:1px solid #133783;
+  color:#f9f6f2;
+  width:40%;
+  max-width: 200px;
+}
+.fb-user {
+  font-weight: bold;
+  text-align:center;
+  display: inline-block;
+  margin: 0 auto;
+  width:40%;
+  max-width: 200px;
+}
+.fb-user img {
+  vertical-align:middle;
+}
+.fb-user a:link, .fb-user a:visited {
+  color: #776e65;
+  text-decoration: underline;
+  font-weight: normal;
 }
 .message {
   background-color:#edc53f;

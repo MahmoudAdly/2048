@@ -13,6 +13,7 @@ var board = {
   initialize: function() {
     this.svg = $(document.querySelectorAll('embed')[0].getSVGDocument().documentElement);
     this.reset();
+    this.getScore();
     return true;
   },
   // reset board and scores
@@ -100,8 +101,12 @@ var board = {
         }
       }
     }
-    if (emptyTiles.length == 0)
+    if (emptyTiles.length == 0) {
+      if(this.bestScore > 0 && this.bestScore == this.currentScore) {
+        this.postScore();
+      }
       return false;
+    }
     // select one in random
     var rand_num =  Math.floor(Math.random() * (emptyTiles.length-1));
     var rand_tile = emptyTiles[rand_num];
@@ -237,6 +242,32 @@ var board = {
     }
     this.svg.find('#textScore').find('tspan').html(this.currentScore);
     this.svg.find('#textBest').find('tspan').html(this.bestScore);
+  },
+  postScore: function(){
+    var http = new XMLHttpRequest();
+    var url = "post_score.php";
+    var params = "score="+this.bestScore;
+    http.open("POST", url, true);
+    //Send the proper header information along with the request
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    http.onreadystatechange = function() {//Call a function when the state changes.
+        if(http.readyState == 4 && http.status == 200) {
+        }
+        
+    }
+    http.send(params);
+  },
+  getScore: function(){
+    var http = new XMLHttpRequest();
+    var url = "get_score.php";
+    http.open("GET", url, false);
+    http.send();
+    var new_score = parseInt(http.responseText);
+    if(new_score > 0) {
+        this.bestScore = new_score;    
+    } else {
+        this.bestScore = 0;
+    }
   }
 };
 

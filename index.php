@@ -1,0 +1,70 @@
+<?php
+require './facebook/facebook.php';
+require './facebook/vars.php';
+
+$facebook = new Facebook(array(
+  'appId'  => $APP_ID,
+  'secret' => $APP_SECRET
+));
+
+if(isset($_GET['action']) && $_GET['action'] === 'logout'){
+    $facebook->destroySession();
+} else {
+    // Get User ID
+    $user = $facebook->getUser();
+}
+
+if ($user) {
+    $me = $facebook->api('/me');
+    $myId = $me['id'];
+    $myNameArr = explode(" ", $me['name']);
+    $myName = $myNameArr[0];
+    $myPicture = "https://graph.facebook.com/" . $myId . "/picture";
+    $logoutUrl = $facebook->getLogoutUrl();
+} else {
+    $loginUrl = $facebook->getLoginUrl(array('scope' => 'publish_stream'));
+}
+?>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=10,maximum-scale=1">
+  <meta name="description" content="An SVG clone of 2048 game">
+  <meta name="author" content="Mahmoud Adly Ezzat">
+  <title>2048 - Thaghra</title>
+  <link rel="stylesheet" type="text/css" href="css/2048.css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src='js/jquery.svg.js'></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="js/2048.js"></script>
+  
+</head>
+<body>
+  
+  <span class="touchpad" style="">&nbsp;</span>
+  <span class="full-width">
+    <embed class="stage" type="image/svg+xml" src="img/2048.svg" onLoad="board.initialize()" />
+  </span>
+  <div class="full-width centered-container">
+    <a href="javascript:;" class="btn new-game">New Game</a>
+    <?php if ($user): ?>
+      <div class="fb-user">
+        <img src="<?php echo $myPicture; ?>">
+        <?php echo $myName; ?> (<a href="index.php?action=logout">Logout</a>)
+        <br/>
+
+      </div>
+    <?php else: ?>
+      <a href="<?php echo $loginUrl; ?>" class="btn fb-login">Facebook Login</a>
+    <?php endif ?>
+  </div>
+  <div class="full-width centered-container message">
+    This is a test for the implementation of the original<br>
+    <a href="https://gabrielecirulli.github.io/2048/" target="_blank">2048 by Gabriele Cirulli</a>
+  </div>
+
+</body>
+</html>
