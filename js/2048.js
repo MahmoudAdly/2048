@@ -10,6 +10,28 @@ var board = {
           [0,0,0,0]
           ],
   stackingLoopLimit: 3,
+  initialize: function() {
+    this.svg = $(document.querySelectorAll('embed')[0].getSVGDocument().documentElement);
+    this.reset();
+    return true;
+  },
+  // reset board and scores
+  reset: function() {
+    // clear array
+    for(var i=0; i<4; i++) {
+      for(var j=0; j<4; j++) {
+        this.array[i][j] = 0;
+      }
+    }
+    // clear score
+    this.currentScore = 0;
+
+    // create new tiles
+    this.addNewTile();
+    this.addNewTile();
+
+    this.updateView();
+  },
   // get tile and text styles for the matching value
   selectStyle: function(value) {
     switch(value) {
@@ -66,23 +88,6 @@ var board = {
         'text': { 'font-size': '40px', 'font-weight': 'normal', 'fill': '#f9f6f2' }
       }  
     }
-  },
-  // reset board and scores
-  reset: function() {
-    // clear array
-    for(var i=0; i<4; i++) {
-      for(var j=0; j<4; j++) {
-        this.array[i][j] = 0;
-      }
-    }
-    // clear score
-    this.currentScore = 0;
-
-    // create new tiles
-    this.addNewTile();
-    this.addNewTile();
-
-    this.updateView();
   },
   // add a new tile in a random empty tile
   addNewTile: function() {
@@ -243,17 +248,6 @@ function resizeTouchpad() {
   $(".touchpad").css('height', $('.stage').height());
 }
 
-// load svg object to have access to it
-(function () {
-  var onSvgLoaded = function () {
-    board.svg = $( this.getSVGDocument().documentElement );
-  };
-  document.querySelectorAll('embed')[0].addEventListener('load', onSvgLoaded);
-})();
-
-$(window).bind('resize', function() {
-  resizeTouchpad();
-});
 
 $(window).load(function() {
   resizeTouchpad();
@@ -284,8 +278,10 @@ $(window).load(function() {
     board.reset();
   });
 
-  board.reset();
+});
 
+$(window).bind('resize', function() {
+  resizeTouchpad();
 });
 
 $(window).keydown(function(e){

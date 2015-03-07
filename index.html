@@ -7,12 +7,18 @@
   <meta name="author" content="Mahmoud Adly Ezzat">
   <title>2048 - Thaghra</title>
   <link rel="stylesheet" type="text/css" href="css/2048.css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src='js/jquery.svg.js'></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="js/2048.js"></script>
+  
 </head>
 <body>
   
   <span class="touchpad" style="">&nbsp;</span>
   <span class="full-width">
-    <embed class="stage" type="image/svg+xml" src="img/2048.svg" />
+    <embed class="stage" type="image/svg+xml" src="img/2048.svg" onLoad="board.initialize()" />
   </span>
   <div class="full-width centered-container">
     <a href="javascript:;" class="new-game">New Game</a>
@@ -22,9 +28,5 @@
     <a href="https://gabrielecirulli.github.io/2048/" target="_blank">2048 by Gabriele Cirulli</a>. 
   </div>
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-  <script type="text/javascript" src='js/jquery.svg.js'></script>
-  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="js/2048.js"></script>
 </body>
 </html>
