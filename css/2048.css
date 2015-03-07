@@ -11,6 +11,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.centered-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .new-game {
   background-color:#8f7a66;
   border:1px solid #8f7a66;
@@ -18,7 +23,7 @@ body {
   color:#f9f6f2;
   display:block;
   font-family:sans-serif;
-  font-size:16px;
+  font-size:18px;
   line-height:44px;
   text-align:center;
   text-decoration:none;
@@ -27,8 +32,25 @@ body {
   max-width: 200px;
   margin: 0 auto;
 }
-.buttons-container {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.message {
+  background-color:#edc53f;
+  border:1px solid #edc53f;
+  border-radius:5px;
+  color:#fff;
+  display:block;
+  font-family:sans-serif;
+  font-size:18px;
+  line-height:25px;
+  text-align:center;
+  text-decoration:none;
+  display: block;
+  width:90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.message a:link, .message a:visited {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
 }
