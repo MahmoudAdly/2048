@@ -190,10 +190,18 @@ var board = {
           var change = this.challenge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
           changeHappened = changeHappened || change;
         }
-        for(var j=0; j < this.array.length; j++) {
-          var change = this.merge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
-          changeHappened = changeHappened || change;
-        }
+      }
+    }
+    for(var x in iArr) {
+      var i = iArr[x]; 
+      for(var j=0; j < this.array.length; j++) {
+        var change = this.merge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
+        changeHappened = changeHappened || change;
+      }
+    }
+    for(var loop=0; loop<this.stackingLoopLimit; loop++) {
+      for(var x in iArr) {
+        var i = iArr[x]; 
         for(var j=0; j < this.array.length; j++) {
           var change = this.challenge({'i':i, 'j':j}, {'i': i+incrementer, 'j': j});
           changeHappened = changeHappened || change;
