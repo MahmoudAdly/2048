@@ -3,4 +3,4 @@
 
 An implementation of the original [2048 by Gabriele Cirulli](https://gabrielecirulli.github.io/2048/) using SVG and JQuery.
 
-[View online](http://lab.thaghra.com/2048).
+[View online](http://2048.thaghra.com/).
